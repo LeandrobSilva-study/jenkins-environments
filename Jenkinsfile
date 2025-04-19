@@ -13,20 +13,20 @@ pipeline{
             steps{
                 echo "Compilando o código"
                 sh 'javac Param.java'
-                sh 'The Author is ${AUTHOR}'
+                sh "The Author is ${AUTHOR}"
             }
         }
         stage('Execute'){
             steps{
                 echo "Execute the program with a parameter "
-                sh 'java Param ${NAME}'
+                sh "java Param ${NAME}"
             }
         }
         stage('Display the machine name'){
             steps{
                echo "And here I display name of the machine"
-               sh 'javac Maquina.java'
-               sh 'java Maquina ${MACHINE}'
+               sh 'javac Maquine.java'
+               sh "java Maquine ${MACHINE}"
             }
         }
     }
