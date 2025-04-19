@@ -25,8 +25,8 @@ pipeline{
     stage('Display the machine name'){
       steps{
         echo "And here I display name of the machine"
-        sh 'javac Maquine.java'
-        sh "java Maquine ${MACHINE}"
+        sh 'javac Machine.java'
+        sh "java Machine ${MACHINE}"
       }
     }
    }
