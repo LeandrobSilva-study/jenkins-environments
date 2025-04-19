@@ -13,7 +13,7 @@ pipeline{
       steps{
         echo "Compilando o código"
         sh 'javac Param.java'
-        sh "The Author is ${AUTHOR}"
+        echo "The Author is ${AUTHOR}"
       }
      }
     stage('Execute'){
