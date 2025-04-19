@@ -1,8 +1,5 @@
 pipeline{
     agent any
-    tools{
-     jdk: 'jdk_11.0.27'
-    }
     environment {
       NAME = "Jenkins"
       MACHINE = "Linux"
